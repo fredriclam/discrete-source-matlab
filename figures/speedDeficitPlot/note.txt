@@ -1,0 +1,3 @@
+When sorted (t_r, then t_ign) in MATLAB variable editor:
+	in "all_entries_slab(2024)"
+		anomalous high speed propagation (appears as outlier data point in plot).

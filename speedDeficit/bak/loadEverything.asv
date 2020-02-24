@@ -1,0 +1,29 @@
+% Call loadSOLN to load all information to a struct-array
+D = dir('SOLN*');
+all_entries_cyl = [];
+all_entries_slab = [];
+for i = 1:length(D)
+    disp(['Loading ' num2str(i)]);
+    file_str = D(i).name;
+    entry = loadSOLN(file_str);
+    if isempty(entry)
+        continue
+    end
+    if strcmpi(entry.geometry, 'slab')
+        all_entries_slab = [all_entries_slab entry];
+    else
+        all_entries_cyl = [all_entries_cyl entry];
+    end
+end
+
+%% Sorting
+[~,index] = sortrows([all_entries_cyl.Y].');
+all_entries_cyl = all_entries_cyl(index); clear index
+[~,index] = sortrows([all_entries_slab.Y].');
+all_entries_slab = all_entries_slab(index); clear index
+
+%% Plotting
+% Assuming one parameter-point
+figure(12
+subplot
+plot([all_entries_slab.Y], [all_entries_slab.speed])

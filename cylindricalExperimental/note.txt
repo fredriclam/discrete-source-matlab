@@ -1,0 +1,2 @@
+For some reason, t = 0.1 works best.
+"minimization_position_2..." is at t = 0.1.
