@@ -1,0 +1,1 @@
+N = 10000, dt = 0.001, t_max = 5, boxcar_width = 0.001 for FDM reference state
