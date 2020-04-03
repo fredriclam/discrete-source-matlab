@@ -1,0 +1,17 @@
+theta_ign=0
+t_r=0
+dt=1e-3
+t_timeout=999
+width_X=0
+width_Y=0
+width_Z=0
+num_images=1
+ei_table_resolution=1e-6
+ignite_ratio=0.1
+initiation_density_factor=1
+ensemble_size=1
+nominal_dimension=0
+spread_factor=0.09
+spread_radius=10
+aspect_ratio=100
+heat_loss_parameter=0.
